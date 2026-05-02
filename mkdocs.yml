@@ -1,0 +1,51 @@
+site_name: Computer Vision - Simplified AR
+site_description: Simplified AR - projection of a 3D cube on a chessboard (image and video)
+
+repo_url: https://github.com/01alicia/homography-based-ar
+repo_name: 01alicia/homography-based-ar
+
+theme:
+  name: material
+  language: en
+  favicon: assets/favicon.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+            show_signature_annotations: true
+
+nav:
+  - Home: index.md
+  - Documentation: api.md
